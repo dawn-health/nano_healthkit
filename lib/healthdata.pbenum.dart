@@ -2,7 +2,7 @@
 //  Generated code. Do not modify.
 //  source: healthdata.proto
 //
-// @dart = 2.3
+
 // ignore_for_file: camel_case_types,non_constant_identifier_names,library_prefixes,unused_import,unused_shown_name,return_of_invalid_type
 
 // ignore_for_file: UNDEFINED_SHOWN_NAME,UNUSED_SHOWN_NAME
@@ -239,7 +239,7 @@ class HealthTypes extends $pb.ProtobufEnum {
   ];
 
   static final $core.Map<$core.int, HealthTypes> _byValue = $pb.ProtobufEnum.initByValue(values);
-  static HealthTypes valueOf($core.int value) => _byValue[value];
+  static HealthTypes? valueOf($core.int value) => _byValue[value];
 
   const HealthTypes._($core.int v, $core.String n) : super(v, n);
 }
@@ -258,7 +258,7 @@ class RequestSorting extends $pb.ProtobufEnum {
   ];
 
   static final $core.Map<$core.int, RequestSorting> _byValue = $pb.ProtobufEnum.initByValue(values);
-  static RequestSorting valueOf($core.int value) => _byValue[value];
+  static RequestSorting? valueOf($core.int value) => _byValue[value];
 
   const RequestSorting._($core.int v, $core.String n) : super(v, n);
 }
@@ -283,7 +283,7 @@ class StatisticsOptions extends $pb.ProtobufEnum {
   ];
 
   static final $core.Map<$core.int, StatisticsOptions> _byValue = $pb.ProtobufEnum.initByValue(values);
-  static StatisticsOptions valueOf($core.int value) => _byValue[value];
+  static StatisticsOptions? valueOf($core.int value) => _byValue[value];
 
   const StatisticsOptions._($core.int v, $core.String n) : super(v, n);
 }

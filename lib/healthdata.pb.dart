@@ -2,7 +2,7 @@
 //  Generated code. Do not modify.
 //  source: healthdata.proto
 //
-// @dart = 2.3
+
 // ignore_for_file: camel_case_types,non_constant_identifier_names,library_prefixes,unused_import,unused_shown_name,return_of_invalid_type
 
 import 'dart:core' as $core
@@ -33,7 +33,7 @@ class HealthTypeList extends $pb.GeneratedMessage {
       create()..mergeFromJson(i, r);
   HealthTypeList clone() => HealthTypeList()..mergeFromMessage(this);
   HealthTypeList copyWith(void Function(HealthTypeList) updates) =>
-      super.copyWith((message) => updates(message as HealthTypeList));
+      super.copyWith((message) => updates(message as HealthTypeList)) as HealthTypeList;
   $pb.BuilderInfo get info_ => _i;
   @$core.pragma('dart2js:noInline')
   static HealthTypeList create() => HealthTypeList._();
@@ -41,7 +41,7 @@ class HealthTypeList extends $pb.GeneratedMessage {
   static $pb.PbList<HealthTypeList> createRepeated() =>
       $pb.PbList<HealthTypeList>();
   static HealthTypeList getDefault() => _defaultInstance ??= create()..freeze();
-  static HealthTypeList _defaultInstance;
+  static HealthTypeList? _defaultInstance;
 
   $core.List<HealthTypes> get types => $_getList(0);
 }
@@ -72,7 +72,7 @@ class HealthDataRequest extends $pb.GeneratedMessage {
       create()..mergeFromJson(i, r);
   HealthDataRequest clone() => HealthDataRequest()..mergeFromMessage(this);
   HealthDataRequest copyWith(void Function(HealthDataRequest) updates) =>
-      super.copyWith((message) => updates(message as HealthDataRequest));
+      super.copyWith((message) => updates(message as HealthDataRequest)) as HealthDataRequest;
   $pb.BuilderInfo get info_ => _i;
   @$core.pragma('dart2js:noInline')
   static HealthDataRequest create() => HealthDataRequest._();
@@ -81,7 +81,7 @@ class HealthDataRequest extends $pb.GeneratedMessage {
       $pb.PbList<HealthDataRequest>();
   static HealthDataRequest getDefault() =>
       _defaultInstance ??= create()..freeze();
-  static HealthDataRequest _defaultInstance;
+  static HealthDataRequest? _defaultInstance;
 
   HealthTypes get type => $_getN(0);
   set type(HealthTypes v) {
@@ -144,7 +144,7 @@ class HealthDataRequestList extends $pb.GeneratedMessage {
       HealthDataRequestList()..mergeFromMessage(this);
   HealthDataRequestList copyWith(
           void Function(HealthDataRequestList) updates) =>
-      super.copyWith((message) => updates(message as HealthDataRequestList));
+      super.copyWith((message) => updates(message as HealthDataRequestList)) as HealthDataRequestList;
   $pb.BuilderInfo get info_ => _i;
   @$core.pragma('dart2js:noInline')
   static HealthDataRequestList create() => HealthDataRequestList._();
@@ -153,7 +153,7 @@ class HealthDataRequestList extends $pb.GeneratedMessage {
       $pb.PbList<HealthDataRequestList>();
   static HealthDataRequestList getDefault() =>
       _defaultInstance ??= create()..freeze();
-  static HealthDataRequestList _defaultInstance;
+  static HealthDataRequestList? _defaultInstance;
 
   $core.List<HealthDataRequest> get requests => $_getList(0);
 }
@@ -236,16 +236,16 @@ class HealthData extends $pb.GeneratedMessage {
       create()..mergeFromJson(i, r);
   HealthData clone() => HealthData()..mergeFromMessage(this);
   HealthData copyWith(void Function(HealthData) updates) =>
-      super.copyWith((message) => updates(message as HealthData));
+      super.copyWith((message) => updates(message as HealthData)) as HealthData;
   $pb.BuilderInfo get info_ => _i;
   @$core.pragma('dart2js:noInline')
   static HealthData create() => HealthData._();
   HealthData createEmptyInstance() => create();
   static $pb.PbList<HealthData> createRepeated() => $pb.PbList<HealthData>();
   static HealthData getDefault() => _defaultInstance ??= create()..freeze();
-  static HealthData _defaultInstance;
+  static HealthData? _defaultInstance;
 
-  HealthData_SpecificData whichSpecificData() =>
+  HealthData_SpecificData? whichSpecificData() =>
       _HealthData_SpecificDataByTag[$_whichOneof(0)];
   void clearSpecificData() => clearField($_whichOneof(0));
 
@@ -394,7 +394,7 @@ class HealthDataList extends $pb.GeneratedMessage {
       create()..mergeFromJson(i, r);
   HealthDataList clone() => HealthDataList()..mergeFromMessage(this);
   HealthDataList copyWith(void Function(HealthDataList) updates) =>
-      super.copyWith((message) => updates(message as HealthDataList));
+      super.copyWith((message) => updates(message as HealthDataList)) as HealthDataList;
   $pb.BuilderInfo get info_ => _i;
   @$core.pragma('dart2js:noInline')
   static HealthDataList create() => HealthDataList._();
@@ -402,7 +402,7 @@ class HealthDataList extends $pb.GeneratedMessage {
   static $pb.PbList<HealthDataList> createRepeated() =>
       $pb.PbList<HealthDataList>();
   static HealthDataList getDefault() => _defaultInstance ??= create()..freeze();
-  static HealthDataList _defaultInstance;
+  static HealthDataList? _defaultInstance;
 
   $core.List<HealthData> get data => $_getList(0);
 }
@@ -421,7 +421,7 @@ class EmptySpecificData extends $pb.GeneratedMessage {
       create()..mergeFromJson(i, r);
   EmptySpecificData clone() => EmptySpecificData()..mergeFromMessage(this);
   EmptySpecificData copyWith(void Function(EmptySpecificData) updates) =>
-      super.copyWith((message) => updates(message as EmptySpecificData));
+      super.copyWith((message) => updates(message as EmptySpecificData)) as EmptySpecificData;
   $pb.BuilderInfo get info_ => _i;
   @$core.pragma('dart2js:noInline')
   static EmptySpecificData create() => EmptySpecificData._();
@@ -430,7 +430,7 @@ class EmptySpecificData extends $pb.GeneratedMessage {
       $pb.PbList<EmptySpecificData>();
   static EmptySpecificData getDefault() =>
       _defaultInstance ??= create()..freeze();
-  static EmptySpecificData _defaultInstance;
+  static EmptySpecificData? _defaultInstance;
 }
 
 class QuantitySpecificData extends $pb.GeneratedMessage {
@@ -451,7 +451,7 @@ class QuantitySpecificData extends $pb.GeneratedMessage {
   QuantitySpecificData clone() =>
       QuantitySpecificData()..mergeFromMessage(this);
   QuantitySpecificData copyWith(void Function(QuantitySpecificData) updates) =>
-      super.copyWith((message) => updates(message as QuantitySpecificData));
+      super.copyWith((message) => updates(message as QuantitySpecificData)) as QuantitySpecificData;
   $pb.BuilderInfo get info_ => _i;
   @$core.pragma('dart2js:noInline')
   static QuantitySpecificData create() => QuantitySpecificData._();
@@ -460,7 +460,7 @@ class QuantitySpecificData extends $pb.GeneratedMessage {
       $pb.PbList<QuantitySpecificData>();
   static QuantitySpecificData getDefault() =>
       _defaultInstance ??= create()..freeze();
-  static QuantitySpecificData _defaultInstance;
+  static QuantitySpecificData? _defaultInstance;
 
   Int64 get count => $_getI64(0);
   set count(Int64 v) {
@@ -503,7 +503,7 @@ class CategorySpecificData extends $pb.GeneratedMessage {
   CategorySpecificData clone() =>
       CategorySpecificData()..mergeFromMessage(this);
   CategorySpecificData copyWith(void Function(CategorySpecificData) updates) =>
-      super.copyWith((message) => updates(message as CategorySpecificData));
+      super.copyWith((message) => updates(message as CategorySpecificData)) as CategorySpecificData;
   $pb.BuilderInfo get info_ => _i;
   @$core.pragma('dart2js:noInline')
   static CategorySpecificData create() => CategorySpecificData._();
@@ -512,7 +512,7 @@ class CategorySpecificData extends $pb.GeneratedMessage {
       $pb.PbList<CategorySpecificData>();
   static CategorySpecificData getDefault() =>
       _defaultInstance ??= create()..freeze();
-  static CategorySpecificData _defaultInstance;
+  static CategorySpecificData? _defaultInstance;
 
   Int64 get value => $_getI64(0);
   set value(Int64 v) {
@@ -542,7 +542,7 @@ class WorkoutSpecificData extends $pb.GeneratedMessage {
       create()..mergeFromJson(i, r);
   WorkoutSpecificData clone() => WorkoutSpecificData()..mergeFromMessage(this);
   WorkoutSpecificData copyWith(void Function(WorkoutSpecificData) updates) =>
-      super.copyWith((message) => updates(message as WorkoutSpecificData));
+      super.copyWith((message) => updates(message as WorkoutSpecificData)) as WorkoutSpecificData;
   $pb.BuilderInfo get info_ => _i;
   @$core.pragma('dart2js:noInline')
   static WorkoutSpecificData create() => WorkoutSpecificData._();
@@ -551,7 +551,7 @@ class WorkoutSpecificData extends $pb.GeneratedMessage {
       $pb.PbList<WorkoutSpecificData>();
   static WorkoutSpecificData getDefault() =>
       _defaultInstance ??= create()..freeze();
-  static WorkoutSpecificData _defaultInstance;
+  static WorkoutSpecificData? _defaultInstance;
 
   $core.double get totalEnergyBurned => $_getN(0);
   set totalEnergyBurned($core.double v) {
@@ -613,7 +613,7 @@ class CharacteristicSpecificData extends $pb.GeneratedMessage {
   CharacteristicSpecificData copyWith(
           void Function(CharacteristicSpecificData) updates) =>
       super.copyWith(
-          (message) => updates(message as CharacteristicSpecificData));
+          (message) => updates(message as CharacteristicSpecificData)) as CharacteristicSpecificData;
   $pb.BuilderInfo get info_ => _i;
   @$core.pragma('dart2js:noInline')
   static CharacteristicSpecificData create() => CharacteristicSpecificData._();
@@ -622,7 +622,7 @@ class CharacteristicSpecificData extends $pb.GeneratedMessage {
       $pb.PbList<CharacteristicSpecificData>();
   static CharacteristicSpecificData getDefault() =>
       _defaultInstance ??= create()..freeze();
-  static CharacteristicSpecificData _defaultInstance;
+  static CharacteristicSpecificData? _defaultInstance;
 
   $core.String get value => $_getS(0, '');
   set value($core.String v) {
@@ -653,7 +653,7 @@ class ClinicalRecordSpecificData extends $pb.GeneratedMessage {
   ClinicalRecordSpecificData copyWith(
           void Function(ClinicalRecordSpecificData) updates) =>
       super.copyWith(
-          (message) => updates(message as ClinicalRecordSpecificData));
+          (message) => updates(message as ClinicalRecordSpecificData)) as ClinicalRecordSpecificData;
   $pb.BuilderInfo get info_ => _i;
   @$core.pragma('dart2js:noInline')
   static ClinicalRecordSpecificData create() => ClinicalRecordSpecificData._();
@@ -662,7 +662,7 @@ class ClinicalRecordSpecificData extends $pb.GeneratedMessage {
       $pb.PbList<ClinicalRecordSpecificData>();
   static ClinicalRecordSpecificData getDefault() =>
       _defaultInstance ??= create()..freeze();
-  static ClinicalRecordSpecificData _defaultInstance;
+  static ClinicalRecordSpecificData? _defaultInstance;
 
   $core.String get displayName => $_getS(0, '');
   set displayName($core.String v) {
@@ -701,7 +701,7 @@ class DocumentSpecificData extends $pb.GeneratedMessage {
   DocumentSpecificData clone() =>
       DocumentSpecificData()..mergeFromMessage(this);
   DocumentSpecificData copyWith(void Function(DocumentSpecificData) updates) =>
-      super.copyWith((message) => updates(message as DocumentSpecificData));
+      super.copyWith((message) => updates(message as DocumentSpecificData)) as DocumentSpecificData;
   $pb.BuilderInfo get info_ => _i;
   @$core.pragma('dart2js:noInline')
   static DocumentSpecificData create() => DocumentSpecificData._();
@@ -710,7 +710,7 @@ class DocumentSpecificData extends $pb.GeneratedMessage {
       $pb.PbList<DocumentSpecificData>();
   static DocumentSpecificData getDefault() =>
       _defaultInstance ??= create()..freeze();
-  static DocumentSpecificData _defaultInstance;
+  static DocumentSpecificData? _defaultInstance;
 
   $core.String get authorName => $_getS(0, '');
   set authorName($core.String v) {
@@ -771,7 +771,7 @@ class CorrelationSpecificData extends $pb.GeneratedMessage {
       CorrelationSpecificData()..mergeFromMessage(this);
   CorrelationSpecificData copyWith(
           void Function(CorrelationSpecificData) updates) =>
-      super.copyWith((message) => updates(message as CorrelationSpecificData));
+      super.copyWith((message) => updates(message as CorrelationSpecificData)) as CorrelationSpecificData;
   $pb.BuilderInfo get info_ => _i;
   @$core.pragma('dart2js:noInline')
   static CorrelationSpecificData create() => CorrelationSpecificData._();
@@ -780,7 +780,7 @@ class CorrelationSpecificData extends $pb.GeneratedMessage {
       $pb.PbList<CorrelationSpecificData>();
   static CorrelationSpecificData getDefault() =>
       _defaultInstance ??= create()..freeze();
-  static CorrelationSpecificData _defaultInstance;
+  static CorrelationSpecificData? _defaultInstance;
 
   $core.List<HealthData> get objects => $_getList(0);
 }
@@ -804,7 +804,7 @@ class SourceRevision extends $pb.GeneratedMessage {
       create()..mergeFromJson(i, r);
   SourceRevision clone() => SourceRevision()..mergeFromMessage(this);
   SourceRevision copyWith(void Function(SourceRevision) updates) =>
-      super.copyWith((message) => updates(message as SourceRevision));
+      super.copyWith((message) => updates(message as SourceRevision)) as SourceRevision;
   $pb.BuilderInfo get info_ => _i;
   @$core.pragma('dart2js:noInline')
   static SourceRevision create() => SourceRevision._();
@@ -812,7 +812,7 @@ class SourceRevision extends $pb.GeneratedMessage {
   static $pb.PbList<SourceRevision> createRepeated() =>
       $pb.PbList<SourceRevision>();
   static SourceRevision getDefault() => _defaultInstance ??= create()..freeze();
-  static SourceRevision _defaultInstance;
+  static SourceRevision? _defaultInstance;
 
   $core.String get version => $_getS(0, '');
   set version($core.String v) {
@@ -879,7 +879,7 @@ class StatisticsRequest extends $pb.GeneratedMessage {
       create()..mergeFromJson(i, r);
   StatisticsRequest clone() => StatisticsRequest()..mergeFromMessage(this);
   StatisticsRequest copyWith(void Function(StatisticsRequest) updates) =>
-      super.copyWith((message) => updates(message as StatisticsRequest));
+      super.copyWith((message) => updates(message as StatisticsRequest)) as StatisticsRequest;
   $pb.BuilderInfo get info_ => _i;
   @$core.pragma('dart2js:noInline')
   static StatisticsRequest create() => StatisticsRequest._();
@@ -888,7 +888,7 @@ class StatisticsRequest extends $pb.GeneratedMessage {
       $pb.PbList<StatisticsRequest>();
   static StatisticsRequest getDefault() =>
       _defaultInstance ??= create()..freeze();
-  static StatisticsRequest _defaultInstance;
+  static StatisticsRequest? _defaultInstance;
 
   HealthTypes get type => $_getN(0);
   set type(HealthTypes v) {
@@ -942,7 +942,7 @@ class StatisticsData_StatisticsDataBySource extends $pb.GeneratedMessage {
   StatisticsData_StatisticsDataBySource copyWith(
           void Function(StatisticsData_StatisticsDataBySource) updates) =>
       super.copyWith((message) =>
-          updates(message as StatisticsData_StatisticsDataBySource));
+          updates(message as StatisticsData_StatisticsDataBySource)) as StatisticsData_StatisticsDataBySource;
   $pb.BuilderInfo get info_ => _i;
   @$core.pragma('dart2js:noInline')
   static StatisticsData_StatisticsDataBySource create() =>
@@ -952,7 +952,7 @@ class StatisticsData_StatisticsDataBySource extends $pb.GeneratedMessage {
       $pb.PbList<StatisticsData_StatisticsDataBySource>();
   static StatisticsData_StatisticsDataBySource getDefault() =>
       _defaultInstance ??= create()..freeze();
-  static StatisticsData_StatisticsDataBySource _defaultInstance;
+  static StatisticsData_StatisticsDataBySource? _defaultInstance;
 
   SourceRevision get source => $_getN(0);
   set source(SourceRevision v) {
@@ -991,7 +991,7 @@ class StatisticsData_TimeInterval extends $pb.GeneratedMessage {
   StatisticsData_TimeInterval copyWith(
           void Function(StatisticsData_TimeInterval) updates) =>
       super.copyWith(
-          (message) => updates(message as StatisticsData_TimeInterval));
+          (message) => updates(message as StatisticsData_TimeInterval)) as StatisticsData_TimeInterval;
   $pb.BuilderInfo get info_ => _i;
   @$core.pragma('dart2js:noInline')
   static StatisticsData_TimeInterval create() =>
@@ -1001,7 +1001,7 @@ class StatisticsData_TimeInterval extends $pb.GeneratedMessage {
       $pb.PbList<StatisticsData_TimeInterval>();
   static StatisticsData_TimeInterval getDefault() =>
       _defaultInstance ??= create()..freeze();
-  static StatisticsData_TimeInterval _defaultInstance;
+  static StatisticsData_TimeInterval? _defaultInstance;
 
   $core.String get startDate => $_getS(0, '');
   set startDate($core.String v) {
@@ -1064,7 +1064,7 @@ class StatisticsData extends $pb.GeneratedMessage {
       create()..mergeFromJson(i, r);
   StatisticsData clone() => StatisticsData()..mergeFromMessage(this);
   StatisticsData copyWith(void Function(StatisticsData) updates) =>
-      super.copyWith((message) => updates(message as StatisticsData));
+      super.copyWith((message) => updates(message as StatisticsData)) as StatisticsData;
   $pb.BuilderInfo get info_ => _i;
   @$core.pragma('dart2js:noInline')
   static StatisticsData create() => StatisticsData._();
@@ -1072,7 +1072,7 @@ class StatisticsData extends $pb.GeneratedMessage {
   static $pb.PbList<StatisticsData> createRepeated() =>
       $pb.PbList<StatisticsData>();
   static StatisticsData getDefault() => _defaultInstance ??= create()..freeze();
-  static StatisticsData _defaultInstance;
+  static StatisticsData? _defaultInstance;
 
   $core.List<SourceRevision> get sources => $_getList(0);
 
